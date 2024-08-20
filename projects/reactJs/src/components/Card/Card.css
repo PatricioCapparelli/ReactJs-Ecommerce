@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid salmon;
+    border-radius: 10px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.card h1{
+    margin: 0 auto;
+}
+
+.card .enable{
+    color: black;
+}
+
+.card .disable{
+    color: blue;
+}
+
