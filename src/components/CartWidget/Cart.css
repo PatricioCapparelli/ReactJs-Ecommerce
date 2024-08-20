@@ -1,0 +1,9 @@
+
+.cart-widget{
+    position: relative;
+}
+
+
+.cart-widget__icon{
+    font-size: 2em;
+}
