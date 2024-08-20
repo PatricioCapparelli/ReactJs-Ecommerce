@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "reactjs",
   "private": true,
   "version": "0.0.0",
@@ -29,15 +28,4 @@
     "globals": "^15.9.0",
     "vite": "^5.4.0"
   }
-=======
-  "name": "react-capparelli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
->>>>>>> 32502cd2de6cb0a0aa1952a14a258694a80ac0f3
 }
