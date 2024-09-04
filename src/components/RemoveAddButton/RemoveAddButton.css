@@ -1,0 +1,5 @@
+.container-buttons__remove-add{
+    display: flex;
+    gap: 3px;
+    border: 1px solid black;
+}

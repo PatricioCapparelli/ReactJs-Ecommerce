@@ -2,11 +2,18 @@
 
 @import './styles/reset.css';
 @import './styles/shared.css';
+@import './containers/Navbar/Navbar.css';
+@import './containers/ItemListContainer/ItemListContainer.css';
+@import './containers/HomeContainer/HomeContainer.css';
 
-/*  Global Components  */
+/*  Global Components styles  */
 
-@import './components/Navbar/Navbar.css';
 @import './components/CartWidget/Cart.css';
 @import './components/Title/Title.css';
 @import './components/Pill/Pill.css';
 @import './components/Button/Button.css';
+@import './components/Item/Item.css';
+@import './components/ItemButton/ItemButton.css';
+@import './components/Search/Search.css';
+@import './components/RemoveAddButton/RemoveAddButton.css';
+@import './components/Slider/Slider.css'

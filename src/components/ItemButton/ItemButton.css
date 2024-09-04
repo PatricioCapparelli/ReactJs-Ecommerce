@@ -1,0 +1,21 @@
+.item-button {
+    width: 130px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: inherit;
+    border-radius: 10px;
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.item-button:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
