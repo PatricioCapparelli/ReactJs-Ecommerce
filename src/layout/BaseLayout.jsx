@@ -1,3 +1,4 @@
+import Footer from '../containers/Footer/Footer';
 import Navbar from '../containers/Navbar/Navbar'
 
 const BaseLayout = ({ children }) => {
@@ -5,7 +6,7 @@ const BaseLayout = ({ children }) => {
         <>
         <Navbar/>
         {children}
-        <footer/>
+        <Footer/>
         </>
     )
 }

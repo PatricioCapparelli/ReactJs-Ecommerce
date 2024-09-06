@@ -32,7 +32,7 @@ const HomeContainer = () => {
         <main className="section-container__home-main">
             <div className="container-main__home">
                 <article className="container-main__article">
-                <IconPresent title='¿QUIENES SOMOS?' />
+                <IconPresent className='icon-present' title='¿QUIENES SOMOS?' />
                 <Title className='main' name='creadores de verdadero' lastname='helado artesanal' />   
                 <p className="container-main__parraf">Desde un comienzo, tuvimos como objetivo <strong>complacer a los paladares más exigentes</strong> . Seleccionando cuidadosamente nuestra materia prima, logramos obtener un producto de calidad premium, totalmente artesanal.
                 Contamos con una fábrica equipada con <strong>la más alta tecnología</strong>, vehículos refrigerados para distribución y personal altamente capacitado para brindar un servicio de calidad. Continuamos creciendo a través de nuestra <strong>red de franquicias</strong>. Atendemos también requerimientos de gastronomía, heladerías y eventos.</p>
@@ -41,7 +41,7 @@ const HomeContainer = () => {
             </div>
             <section className="container-main__two">
                 {/* CREAR COMPONENTE QUE AGRUPE (ICONPRESENT, TITLE, P) */}
-                <IconPresent title='SABORES' />
+                <IconPresent className='icon-present' title='SABORES' />
                 <Title className='section' name='Hechos de manera' lastname='artesanal' />  
                 <p className="container-main__parraf-two">
                 Nos gusta experimentar cosas nuevas, para eso nos capacitamos y seguimos creciendo día a día.
@@ -56,14 +56,14 @@ const HomeContainer = () => {
             <section className="container-main__tree">
                 <img src={bombonImage} alt="bombon escoces" />
                 <div>
-                <IconPresent title='LOS MAS RICOS' />
+                <IconPresent className='icon-present' title='LOS MAS RICOS' />
                 <Title className='section' lastname='Postres' />
                 <p className="container-main__parraf-two">Disfrutá de nuestros deliciosos postres helados.</p>
                 </div>
             </section>
             <section className="container-main__four">
                 <div>
-                <IconPresent title='VARIEDAD DE SABORES' />
+                <IconPresent className='icon-present' title='VARIEDAD DE SABORES' />
                 <Title className='section' lastname='Paletas' />
                 <p className="container-main__parraf-two">Probá exquisitos sabores en formato paleta. Desde Barbie y Spiderman hasta las propuestas más gourmet.</p>
                 </div>

@@ -1,6 +1,6 @@
-const IconPresent = ({ title }) => {
+const IconPresent = ({ title, className }) => {
     return (
-        <div className="icon-present">
+        <div className={className}>
             <p>{title}</p>
         </div>
     )

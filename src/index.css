@@ -5,6 +5,7 @@
 @import './containers/Navbar/Navbar.css';
 @import './containers/ItemListContainer/ItemListContainer.css';
 @import './containers/HomeContainer/HomeContainer.css';
+@import './containers/Footer/Footer.css';
 
 /*  Global Components styles  */
 
@@ -20,3 +21,4 @@
 @import './components/ItemDetail/ItemDetail.css';
 @import './components/IconPresent/IconPresent.css';
 @import './components/ArticleComponent/ArticleComponent.css';
+

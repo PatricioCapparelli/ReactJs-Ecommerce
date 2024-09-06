@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items, className }) => {
     return (
         <>
-            {items.map(({ name, href }) => (
-                <li className="navbar__item" key={name}>
+            {items.map(({ name, href}) => (
+                <li className={className} key={name}>
                     <NavLink to={href}>{name}</NavLink>
                 </li>
             ))}

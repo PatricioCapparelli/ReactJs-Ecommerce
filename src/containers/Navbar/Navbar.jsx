@@ -19,7 +19,7 @@ const Navbar = () => {
                     <Title className='navbar' name='Drop' lastname='Creem' />
                 </figure>
                 <ul className="navbar__menu">
-                    <ItemList items={links} />
+                    <ItemList className='navbar__item' items={links} />
                     <Icon className='navbar__menu--icon' icon="tabler:search" />
                 </ul>
                 <div className='navbar__icons'>

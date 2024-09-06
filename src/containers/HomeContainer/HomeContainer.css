@@ -167,6 +167,7 @@
 .footer-sucursales{
     display: flex;
     gap: 25px;
+    margin-bottom: 60px;
 }
 
 

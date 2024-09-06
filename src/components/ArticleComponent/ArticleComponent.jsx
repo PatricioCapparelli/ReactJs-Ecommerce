@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 const ArticleComponent = ({title, name, number, numbertwo }) => {
     return (
             <div className="article-component">
-                <IconPresent title={title}/>
+                <IconPresent className='icon-present' title={title}/>
                 <Title className='article' name={name}/>
                 <div>
                     <Icon icon="line-md:phone-call-loop" />
