@@ -19,3 +19,51 @@
     color: white;
     border-color: black;
 }
+
+/* footer card */
+
+.footer-item-button{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px; 
+    background-color:transparent;
+    cursor: pointer;
+    color: inherit;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.footer-item-button:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+/* detail footer btn */
+
+.item-button__foot{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: inherit;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d33939;
+    padding: 10px;
+    margin: 0;
+    width: fit-content;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.item-button__foot:hover{
+    background-color: black;
+    color: white;
+}

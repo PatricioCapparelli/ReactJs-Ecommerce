@@ -1,7 +1,9 @@
-const ItemButton = ({ name }) => {
+const ItemButton = ({ className, name, lastname }) => {
     return (
-        <button className="item-button">{name}</button>
-    )
-}
+        <button className={className}>
+            {name || lastname}
+        </button>
+    );
+};
 
 export default ItemButton;

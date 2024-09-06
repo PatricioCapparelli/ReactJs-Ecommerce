@@ -1,9 +1,11 @@
-const RemoveAddButton = ({ children }) => {
+import ItemButton from "../ItemButton/ItemButton";
+
+const RemoveAddButton = ({ children, name, lastname }) => {
     return (
         <div className="container-buttons__remove-add">
-        <button>1+</button>
+        <ItemButton name={name} className='footer-item-button'/>
         {children}
-        <button>-1</button>
+        <ItemButton lastname={lastname} className='footer-item-button'/>
         </div>
     )
 }

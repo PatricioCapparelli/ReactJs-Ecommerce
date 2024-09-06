@@ -1,5 +1,14 @@
 .container-buttons__remove-add{
     display: flex;
-    gap: 3px;
-    border: 1px solid black;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    color: inherit;
+    padding: 5px;
+    border-radius: 10px;
+}
+.container-buttons__remove-add p{
+    font-size: 18px;
 }

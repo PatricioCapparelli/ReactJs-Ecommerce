@@ -11,7 +11,16 @@ import paletaImage from '../../assets/paleta-home.png'
 import ArticleComponent from "../../components/ArticleComponent/ArticleComponent";
 
 
+
 const HomeContainer = () => {
+
+    const sucursales = [
+    { title: 'Lanus', name: '9 de julio 1680', number: '1134523380', numbertwo: '1135233522' },
+    { title: 'Banfield', name: 'Cabrera 1992', number: '1134523380', numbertwo: '1135233522' },
+    { title: 'Lomas de Zamora', name: 'Alberastain 2220', number: '1134523380', numbertwo: '1135233522' },
+    { title: 'Quilmes', name: 'Derqui 4680', number: '1134523380', numbertwo: '1135233522' },
+    { title: 'CABA', name: 'Maipu 188', number: '1134523380', numbertwo: '1135233522' },
+];
 
     return (
     <>
@@ -67,31 +76,9 @@ const HomeContainer = () => {
                 </div>
             </section>
             <div className="footer-sucursales">
-            <ArticleComponent 
-            title='Lanus' 
-            name='9 de julio 1680' 
-            number='1134523380' 
-            numbertwo='1135233522'/>
-            <ArticleComponent 
-            title='Banfield' 
-            name='Cabrera 1992' 
-            number='1134523380' 
-            numbertwo='1135233522'/>
-            <ArticleComponent 
-            title='Lomas de Zamora' 
-            name='Alberastain 2220' 
-            number='1134523380' 
-            numbertwo='1135233522'/>
-            <ArticleComponent 
-            title='Quilmes' 
-            name='Derqui 4680' 
-            number='1134523380' 
-            numbertwo='1135233522'/>
-            <ArticleComponent 
-            title='CABA' 
-            name='Maipu 188' 
-            number='1134523380' 
-            numbertwo='1135233522'/>
+            {sucursales.map((item) => {
+                return <ArticleComponent  key={item.title} {...item} />
+            })}
             </div>
         </main>
     </>

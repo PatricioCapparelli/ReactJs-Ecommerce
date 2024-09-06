@@ -21,15 +21,16 @@ const ItemDetail = ({ id, name, img, stock, price, className }) => {
                 </section>
                 <h3>Tipo de orden:</h3>
                 <div className='card-buttons__detail'>
-                    <ItemButton name='Local' />
-                    <ItemButton name='Delivery' />
+                    <ItemButton className='item-button' name='Local' />
+                    <ItemButton className='item-button' name='Delivery' />
                 </div>
                 <footer className="card-item__detail-footer">
                     <p className="card-item__detail-precio">
                         Precio: ${price}
                     </p>
-                    <RemoveAddButton />
+                    <RemoveAddButton name='+1' lastname='-1'> <p> Or </p>  </RemoveAddButton>
                 </footer>
+                <ItemButton className='item-button__foot' name='Finalizar compra'></ItemButton>
             </div>
         </article>
     );
