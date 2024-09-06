@@ -91,3 +91,25 @@
     justify-content: center;
 }
 
+/* final footer*/
+
+.footer__final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.footer__final div {
+    width: 1200px;
+    height: 2px;
+    background-color: white; 
+    margin-bottom: 10px; 
+}
+
+.footer__final p {
+    color: white; 
+    text-align: center; 
+    margin: 0 auto; 
+}

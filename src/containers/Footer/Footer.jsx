@@ -45,8 +45,9 @@ const Footer = () => {
                 </div>
                 
             </section>
-            <section>
+            <section className='footer__final'>
                 <div></div>
+                <p>Diseñada por Drop Creem | Copyright © 2024 Drop Creem Helados</p>
             </section>
         </footer>
         </>

@@ -4,7 +4,7 @@ const getProducts = () => {
         {
             id: '1',
             name: 'Mora',
-            price: '1000',
+            price: '400',
             category: 'ice-cream',
             img: './src/assets/barry-ice-cream.png',
             stock: '20',
@@ -13,7 +13,7 @@ const getProducts = () => {
         {
             id: '2',
             name: 'Chocolate en taza',
-            price: '800',
+            price: '400',
             category: 'ice-cream',
             img: './src/assets/chocolate-cup.svg',
             stock: '20',
@@ -22,7 +22,7 @@ const getProducts = () => {
         {
             id: '3',
             name: 'Frambuesa',
-            price: '900',
+            price: '500',
             category: 'ice-cream',
             img: './src/assets/strawberry-ice-cream.png',
             stock: '23',
@@ -31,7 +31,7 @@ const getProducts = () => {
         {
             id: '4',
             name: 'Menta Granizada',
-            price: '900',
+            price: '300',
             category: 'ice-cream',
             img: './src/assets/cono-menta.png',
             stock: '23',
@@ -40,7 +40,7 @@ const getProducts = () => {
         {
             id: '5',
             name: 'Arandano',
-            price: '900',
+            price: '500',
             category: 'ice-cream',
             img: './src/assets/cono-arandano.png',
             stock: '23',
@@ -49,7 +49,7 @@ const getProducts = () => {
         {
             id: '6',
             name: 'Limon y Merengue',
-            price: '900',
+            price: '400',
             category: 'ice-cream',
             img: './src/assets/cono-limon-merengue-min.png',
             stock: '23',
@@ -58,7 +58,7 @@ const getProducts = () => {
         {
             id: '7',
             name: 'Choco cono',
-            price: '900',
+            price: '700',
             category: 'ice-cream',
             img: './src/assets/cono-choco.png',
             stock: '24',
@@ -67,7 +67,7 @@ const getProducts = () => {
         {
             id: '8',
             name: 'Cono mixto',
-            price: '900',
+            price: '800',
             category: 'ice-cream',
             img: './src/assets/cono-sabores.png',
             stock: '24',
@@ -76,7 +76,7 @@ const getProducts = () => {
         {
             id: '9',
             name: 'Vainilla',
-            price: '900',
+            price: '800',
             category: 'ice-cream',
             img: './src/assets/cono-vainilla.jpg',
             stock: '24',
@@ -85,7 +85,7 @@ const getProducts = () => {
         {
             id: '10',
             name: 'Frutilla',
-            price: '900',
+            price: '600',
             category: 'ice-cream',
             img: './src/assets/helado-de-frutilla.png',
             stock: '24',
@@ -94,7 +94,7 @@ const getProducts = () => {
         {
             id: '11',
             name: 'Limon a la crema',
-            price: '900',
+            price: '700',
             category: 'ice-cream',
             img: './src/assets/helado-limon.png',
             stock: '24',
