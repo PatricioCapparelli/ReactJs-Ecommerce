@@ -13,7 +13,7 @@ return (
           <Routes>
             <Route exact path='/' element={ <Home/> } />
             <Route exact path='/shop' element={ <Shop/> } />
-            <Route exact path='/datail' element={ <Detail/> } />
+            <Route exact path='/detail/:id' element={ <Detail/> } />
           </Routes>
         </BaseLayout>
       </BrowserRouter>

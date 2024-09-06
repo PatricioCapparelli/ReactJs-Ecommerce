@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import getProducts from '../../components/asyncMock'
 import Search from '../../components/Search/Search'
 
-const ItemListContainer = ({ title }) => {
+const ItemListContainer = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {

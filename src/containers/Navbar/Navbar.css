@@ -35,7 +35,7 @@
 }
 
 .navbar__item:hover { 
-    background-color: rgb(79, 29, 117);
+    background-color: rgb(117, 29, 44);
     border-radius: 5px; 
     transform: scale(1.1);
 }
@@ -58,7 +58,7 @@
 }
 
 .navbar__icon:hover{
-    background-color:rgb(88, 28, 135);
+    background-color:rgb(135, 28, 42);
     border-radius: 5px;
     transform: scale(1.1);
 }

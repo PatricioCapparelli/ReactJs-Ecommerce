@@ -1,0 +1,12 @@
+.icon-present {
+    display: block;
+    background-color: #0093C9;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    width: fit-content;
+    border-radius: 10px;
+}
+

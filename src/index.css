@@ -16,4 +16,7 @@
 @import './components/ItemButton/ItemButton.css';
 @import './components/Search/Search.css';
 @import './components/RemoveAddButton/RemoveAddButton.css';
-@import './components/Slider/Slider.css'
+@import './components/Slider/Slider.css';
+@import './components/ItemDetail/ItemDetail.css';
+@import './components/IconPresent/IconPresent.css';
+@import './components/ArticleComponent/ArticleComponent.css' 

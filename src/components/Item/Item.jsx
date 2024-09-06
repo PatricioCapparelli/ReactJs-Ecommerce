@@ -1,7 +1,8 @@
 import ItemButton from '../ItemButton/ItemButton'
 import RemoveAddButton from '../RemoveAddButton/RemoveAddButton';
+import { Link } from 'react-router-dom'; 
 
-const Item = ({ name, img, stock, price, className, href }) => {
+const Item = ({ name, img, stock, price, className, id }) => {
     return (
         <article className={className}>
             <picture>
@@ -23,14 +24,14 @@ const Item = ({ name, img, stock, price, className, href }) => {
                     <ItemButton name='Local' />
                     <ItemButton name='Delivery' />
                 </div>
-                <footer className="card-item__footer">
-                    <p className="card-item__precio">
-                        Precio: ${price}
-                    </p>
-                    <RemoveAddButton/>
-                    <button href={href}>detalle</button>
-                </footer>
-        </div>
+                    <footer className="card-item__footer">
+                        <p className="card-item__precio">
+                            Precio: ${price}
+                        </p>
+                        <RemoveAddButton/>
+                        <Link to={`/detail/${id}`} className="btn btn-detail">Detalle</Link> 
+                    </footer>
+                </div>
         </article >
 
     )

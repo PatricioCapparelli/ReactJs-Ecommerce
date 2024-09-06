@@ -1,7 +1,12 @@
 
-function Title({ name, className }) {
+function Title({ name, lastname, className }) {
         
-    return <h1 className={`title-${className}`}>{name}</h1>
+    return (
+    <div className={`title-${className}`}>
+        <h1>{name}</h1>
+        <h2>{lastname}</h2>
+    </div> 
+    )
 }
 
 export default Title;

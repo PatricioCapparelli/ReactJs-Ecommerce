@@ -6,9 +6,9 @@ import ItemList from '../../components/ItemList/ItemList';
 
 const Navbar = () => {
     const links = [
-        { name: 'Shop', href: '#' },
-        { name: 'Know Us', href: '#' },
-        { name: 'Close By', href: '#' }
+        { name: 'Home', href: '/' },
+        { name: 'Shop', href: '/Shop' },
+        { name: 'Detail', href: '/Detail' }
     ];
 
     return (
@@ -16,7 +16,7 @@ const Navbar = () => {
             <nav className="navbar container">
                 <figure className="navbar__logo">
                     <img className='navbar__logo--img' src={helado} alt="logo helado" />
-                    <Title name='Drop' lastname='Creem' />
+                    <Title className='navbar' name='Drop' lastname='Creem' />
                 </figure>
                 <ul className="navbar__menu">
                     <ItemList items={links} />
