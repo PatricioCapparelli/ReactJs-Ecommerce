@@ -1,6 +1,7 @@
-const ItemButton = ({ className, name, lastname }) => {
+const ItemButton = ({ className, name, lastname, eventHandler }) => {
+
     return (
-        <button className={className}>
+        <button onClick={eventHandler} className={className}>
             {name || lastname}
         </button>
     );

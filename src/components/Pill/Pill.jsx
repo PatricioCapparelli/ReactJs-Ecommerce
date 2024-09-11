@@ -1,4 +1,4 @@
-const Pill = ({quantity}) => {
+const Pill = ({ quantity }) => {
     return ( <span className='pill'>{quantity}</span>)
 }
 

@@ -1,8 +1,16 @@
+import { useContext } from 'react';
+import { CartContext } from '../../context/cartContext';
 import ItemButton from '../ItemButton/ItemButton'; 
 import RemoveAddButton from '../RemoveAddButton/RemoveAddButton'; 
 
 
 const ItemDetail = ({ id, name, img, stock, price, className }) => {
+    const {addItem} = useContext(CartContext);
+
+    const handleAdd = () => {
+        addItem({id, name, img, stock, price, className })
+    }
+    
     return (
         <article className={className}>
             <picture>
@@ -30,7 +38,7 @@ const ItemDetail = ({ id, name, img, stock, price, className }) => {
                     </p>
                     <RemoveAddButton name='+1' lastname='-1'> <p> Or </p>  </RemoveAddButton>
                 </footer>
-                <ItemButton className='item-button__foot' name='Finalizar compra'></ItemButton>
+                <ItemButton eventHandler={handleAdd} className='item-button__foot' name='Agregar al carrito'></ItemButton>
             </div>
         </article>
     );
