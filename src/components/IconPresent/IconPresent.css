@@ -23,3 +23,21 @@
     width: fit-content;
     border-radius: 10px;
 }
+
+/* icon present detail */
+
+.icon-present-detail{
+    display: block;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 40px;
+    font-style: italic;
+}

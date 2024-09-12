@@ -7,7 +7,11 @@
 @import './containers/HomeContainer/HomeContainer.css';
 @import './containers/Footer/Footer.css';
 
-/*  Global Components styles  */
+/*  Pages Styles */
+
+@import './pages/Detail/Detail.css';
+
+/*  Global Components Styles  */
 
 @import './components/CartWidget/Cart.css';
 @import './components/Title/Title.css';
@@ -21,4 +25,6 @@
 @import './components/ItemDetail/ItemDetail.css';
 @import './components/IconPresent/IconPresent.css';
 @import './components/ArticleComponent/ArticleComponent.css';
+@import './components/Spinner/Spinner.css';
+@import './components/Accordion/Accordion.css';
 

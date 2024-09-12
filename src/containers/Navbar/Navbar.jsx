@@ -3,12 +3,13 @@ import helado from '../../assets/helado.png';
 import Title from '../../components/Title/Title';
 import CartWidget from '../../components/CartWidget/Cart';
 import ItemList from '../../components/ItemList/ItemList';
+import Accordion from '../../components/Accordion/Accordion';
 
 const Navbar = () => {
     const links = [
         { name: 'Home', href: '/' },
         { name: 'Shop', href: '/Shop' },
-        { name: 'Detail', href: '/Detail' }
+        { name: 'Dessert', href: '#'}
     ];
 
     return (
@@ -23,6 +24,7 @@ const Navbar = () => {
                     <Icon className='navbar__menu--icon' icon="tabler:search" />
                 </ul>
                 <div className='navbar__icons'>
+                    <Accordion/>
                     <Icon className='navbar__icon' icon="ri:menu-3-fill" />
                     <CartWidget />
                 </div>
@@ -33,8 +35,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-    // const [quantity, setQuantity] = useState(0);
-
-    // const changeQuantity = () => {
-    //     setQuantity(quantity + 1)
-    // }

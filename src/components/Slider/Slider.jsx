@@ -1,4 +1,4 @@
-import useSlider from '../UseSlider'
+import useSlider from '../../hooks/UseSlider'
 
 const images = [
     '../../src/assets/Fondo-choco.jpg',

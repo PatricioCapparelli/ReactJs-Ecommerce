@@ -1,0 +1,97 @@
+
+.accordion-container {
+    position: relative;
+}
+
+.accordion-menu {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.10rem;
+    width: fit-content;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    min-width: 12.5rem;
+    position: absolute;
+    top: -43px;
+    left: -200px;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease; 
+}
+
+.accordion-menu-open {
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15em;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-header-button {
+    display: flex;
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2em;
+    gap: 10px;
+}
+
+.accordion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.accordion-list-item {
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.accordion-list-item {
+    padding: 0.35rem 0.7rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 1em; 
+}
+
+.accordion-list-item:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.02);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.accordion-list-item-button {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.65rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.20rem 0.7rem;
+    font-size: 1.2em;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.accordion-list-item-button:hover {
+    color: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+}
