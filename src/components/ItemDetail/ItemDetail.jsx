@@ -5,14 +5,18 @@ import RemoveAddButton from '../RemoveAddButton/RemoveAddButton';
 
 
 const ItemDetail = ({ id, name, img, stock, price, className }) => {
-    const {addItem} = useContext(CartContext);
+    const {addItem, removeItem} = useContext(CartContext);
 
     const handleAdd = () => {
         addItem({id, name, img, stock, price, className })
     }
+
+    const handleRemove = () => {
+        removeItem(id)
+    }
     
     return (
-        <article className={className}>
+        <article className={className} id={id}>
             <picture>
                 <img className="card-item__detail-img" src={`../${img}`} alt={name} />
             </picture>
@@ -36,7 +40,7 @@ const ItemDetail = ({ id, name, img, stock, price, className }) => {
                     <p className="card-item__detail-precio">
                         Precio: ${price}
                     </p>
-                    <RemoveAddButton name='+1' lastname='-1'> <p> Or </p>  </RemoveAddButton>
+                    <RemoveAddButton name='+1' lastname='-1' eventHandler={handleRemove}> <p> Or </p>  </RemoveAddButton>
                 </footer>
                 <ItemButton eventHandler={handleAdd} className='item-button__foot' name='Agregar al carrito'></ItemButton>
             </div>

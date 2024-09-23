@@ -8,7 +8,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/barry-ice-cream.png',
             stock: '20',
-            description: 'descripcion de iphone 12'
+            description: 'Helado sabor mora'
         },
         {
             id: '2',

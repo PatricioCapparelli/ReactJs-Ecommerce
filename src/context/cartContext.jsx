@@ -7,6 +7,7 @@ const CartContextProvider = ({ children }) => {
 
     const addItem = (item) => {
         const existingItem = cartItems.find(currentItem => currentItem.item.id === item.id);
+        
 
         if (existingItem) {
             const updatedCartItems = cartItems.map(currentItem =>
@@ -21,11 +22,22 @@ const CartContextProvider = ({ children }) => {
         }
     };
 
+    const removeItem = (id) => {
+        const updatedCartItems = cartItems.map(currentItem =>
+            currentItem.item.id === id
+                ? { ...currentItem, quantity: currentItem.quantity - 1 }
+                : currentItem
+        ).filter(currentItem => currentItem.quantity > 0); 
+
+        setCartItems(updatedCartItems);
+    };
+
     return (
-        <CartContext.Provider value={{ cartItems, addItem }}>
+        <CartContext.Provider value={{ cartItems, addItem, removeItem }}>
             {children}
         </CartContext.Provider>
     );
 };
 
 export default CartContextProvider;
+

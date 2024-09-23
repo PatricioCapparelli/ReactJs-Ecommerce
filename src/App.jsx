@@ -5,22 +5,23 @@ import Home from './pages/Home/Home';
 import Detail from './pages/Detail/Detail';
 import CartContextProvider from './context/cartContext';
 
+
 function App() {
 
 
-return (  
+  return (
+    <CartContextProvider>
       <BrowserRouter>
-        <CartContextProvider>
-          <BaseLayout>
-            <Routes>
-              <Route exact path='/' element={ <Home/> } />
-              <Route exact path='/shop' element={ <Shop/> } />
-              <Route exact path='/detail/:id' element={ <Detail/> } />
-            </Routes>
-          </BaseLayout>
-        </CartContextProvider>
+        <BaseLayout>
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/shop' element={<Shop />} />
+            <Route exact path='/detail/:id' element={<Detail />} />
+          </Routes>
+        </BaseLayout>
       </BrowserRouter>
-    
+    </CartContextProvider>
+
   )
 }
 
