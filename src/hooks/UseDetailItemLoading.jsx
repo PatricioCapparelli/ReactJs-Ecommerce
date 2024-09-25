@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import getProducts from "../components/asyncMock"; 
 import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { database } from "../config/firebase.config";
 
 const useDetailItemLoading = () => {
     const [item, setItem] = useState(null);
@@ -8,21 +9,26 @@ const useDetailItemLoading = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchItem = async () => {
+            setLoading(true);
+            const docRef = doc(database, 'items', id);
+
             try {
-                setLoading(true);
-                const response = await getProducts();
-                const foundItem = response.find(item => item.id === id);
-                setItem(foundItem || null); 
-            } catch (err) {
-                console.error('Error fetching data:', err);
+                const snapshot = await getDoc(docRef);
+                if (snapshot.exists()) {
+                    setItem({ id: snapshot.id, ...snapshot.data() });
+                } else {
+                    setItem(null); 
+                }
+            } catch (error) {
+                console.error('Error al encontrar el item', error);
                 setItem(null); 
             } finally {
                 setLoading(false);
             }
         };
 
-        fetchData();
+        fetchItem();
     }, [id]);
 
     return { item, loading };

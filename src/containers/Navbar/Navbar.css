@@ -1,6 +1,9 @@
 .header {
-    background: radial-gradient( rgb(160, 32, 32), rgb(202, 64, 85));
+    background: rgba(0, 0, 0, 0.2);
     padding: 8px 0;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
 }
 
 .navbar {
@@ -9,6 +12,7 @@
     color: white;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto; 
 }
 
 .navbar__menu {
@@ -35,7 +39,7 @@
 }
 
 .navbar__item:hover {
-    background-color: rgb(135, 28, 42);
+    background: rgb(0,0,0,0.4);
     border-radius: 5px;
     transform: scale(1.1);
 }
@@ -48,19 +52,6 @@
 .navbar__logo--img {
     width: 80px;
     height: 80px;
-}
-
-.navbar__icon {
-    font-size: 2.6em;
-    cursor: pointer;
-    padding: 5px;
-    transition: transform 0.3s;
-}
-
-.navbar__icon:hover {
-    background-color: rgb(135, 28, 42);
-    border-radius: 5px;
-    transform: scale(1.1);
 }
 
 .navbar__icons {

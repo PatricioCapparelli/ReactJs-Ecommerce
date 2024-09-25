@@ -4,6 +4,7 @@ import Shop from './pages/Shop/Shop'
 import Home from './pages/Home/Home';
 import Detail from './pages/Detail/Detail';
 import CartContextProvider from './context/cartContext';
+import Update from './pages/Update/Update';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/' element={<Home />} />
             <Route exact path='/shop' element={<Shop />} />
             <Route exact path='/detail/:id' element={<Detail />} />
+            <Route exact path='/Update' element={<Update/>} />
           </Routes>
         </BaseLayout>
       </BrowserRouter>

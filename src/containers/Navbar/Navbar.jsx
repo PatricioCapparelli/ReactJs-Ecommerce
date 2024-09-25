@@ -9,7 +9,7 @@ const Navbar = () => {
     const links = [
         { name: 'Home', href: '/' },
         { name: 'Shop', href: '/Shop' },
-        { name: 'Dessert', href: '#'}
+        { name: 'Contact', href: '#'}
     ];
 
     return (
@@ -25,7 +25,6 @@ const Navbar = () => {
                 </ul>
                 <div className='navbar__icons'>
                     <Accordion/>
-                    <Icon className='navbar__icon' icon="ri:menu-3-fill" />
                     <CartWidget />
                 </div>
             </nav>

@@ -1,6 +1,7 @@
 
 .accordion-container {
-    position: relative;
+    position: absolute;
+    z-index: 5;
 }
 
 .accordion-menu {
@@ -19,8 +20,7 @@
     min-width: 12.5rem;
     position: absolute;
     top: -43px;
-    left: -200px;
-    z-index: 1000;
+    left: -250px;
     transition: box-shadow 0.3s ease; 
 }
 

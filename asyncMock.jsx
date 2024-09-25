@@ -17,7 +17,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/chocolate-cup.svg',
             stock: '20',
-            description: 'descripcion de Motorola Edge 20'
+            description: 'helado sabor chocolate'
         },
         {
             id: '3',
@@ -26,7 +26,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/strawberry-ice-cream.png',
             stock: '23',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor frambuesa'
         },
         {
             id: '4',
@@ -35,7 +35,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/cono-menta.png',
             stock: '23',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor menta granizada'
         },
         {
             id: '5',
@@ -44,7 +44,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/cono-arandano.png',
             stock: '23',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor arandano'
         },
         {
             id: '6',
@@ -53,7 +53,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/cono-limon-merengue-min.png',
             stock: '23',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor limon y merengue'
         },
         {
             id: '7',
@@ -62,7 +62,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/cono-choco.png',
             stock: '24',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor chocolate'
         },
         {
             id: '8',
@@ -71,7 +71,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/cono-sabores.png',
             stock: '24',
-            description: 'descripcion de Samgung S21'
+            description: 'helado de gusto mixto'
         },
         {
             id: '9',
@@ -80,7 +80,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/cono-vainilla.jpg',
             stock: '24',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor vainilla'
         },
         {
             id: '10',
@@ -89,7 +89,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/helado-de-frutilla.png',
             stock: '24',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor frutilla'
         },
         {
             id: '11',
@@ -98,7 +98,7 @@ const getProducts = () => {
             category: 'ice-cream',
             img: './src/assets/helado-limon.png',
             stock: '24',
-            description: 'descripcion de Samgung S21'
+            description: 'helado sabor limon a la crema'
         }
     ]
     return new Promise ((resolve) =>{
