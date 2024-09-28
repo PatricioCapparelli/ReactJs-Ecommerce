@@ -29,7 +29,6 @@ const Item = ({ name, img, stock, price, className, id }) => {
                         <p className="card-item__precio">
                             Precio: ${price}
                         </p>
-                        <RemoveAddButton name='+1' lastname='-1'> <p> Or </p>  </RemoveAddButton>
                     </footer>
                 </div>
         </article >

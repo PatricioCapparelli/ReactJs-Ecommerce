@@ -10,19 +10,28 @@ const useDetailItemLoading = () => {
 
     useEffect(() => {
         const fetchItem = async () => {
+            if (!id) {
+                console.error("El ID es indefinido");
+                setLoading(false);
+                return;
+            }
+
             setLoading(true);
             const docRef = doc(database, 'items', id);
+            console.log("ID del documento:", id);
+            console.log("Referencia del documento:", docRef);
 
             try {
                 const snapshot = await getDoc(docRef);
                 if (snapshot.exists()) {
                     setItem({ id: snapshot.id, ...snapshot.data() });
+                    console.log('Datos del documento:', snapshot.data());
                 } else {
-                    setItem(null); 
+                    setItem(null);
                 }
             } catch (error) {
                 console.error('Error al encontrar el item', error);
-                setItem(null); 
+                setItem(null);
             } finally {
                 setLoading(false);
             }
@@ -35,4 +44,3 @@ const useDetailItemLoading = () => {
 };
 
 export default useDetailItemLoading;
-

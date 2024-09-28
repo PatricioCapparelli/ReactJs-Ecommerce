@@ -20,6 +20,7 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: rgba(255, 255, 255, 1);
     gap: 10px;
+    padding-left: 50px;
 }
 
 .card-white__item{
@@ -55,7 +56,10 @@ gap: 10px;
 
 .card-item__footer{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+}
+
+.card-item__precio{
+    display: flex;
+    flex-direction: start;
+
 }

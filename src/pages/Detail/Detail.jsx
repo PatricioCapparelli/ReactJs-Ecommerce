@@ -2,9 +2,11 @@ import ItemDetail from "../../components/ItemDetail/ItemDetail";
 import useDetailItemLoading from "../../hooks/UseDetailItemLoading";
 import Spinner from '../../components/Spinner/Spinner';
 import IconPresent from '../../components/IconPresent/IconPresent'
+import { useParams } from 'react-router-dom';
 
 const Detail = () => {
     const { item, loading } = useDetailItemLoading();
+    const { id } = useParams();
 
     const stock = item?.stock ?? '0'; 
 
@@ -14,7 +16,7 @@ const Detail = () => {
         <section className='section-content'>
             <div className='section-container__main'>
                 { loading ? <Spinner /> 
-                : item ? <ItemDetail className={className} {...item} /> 
+                : item ? <ItemDetail id={id} className={className} {...item} /> 
                 : <IconPresent title='Helado no disponible...' className='icon-present-detail'/> }  
             </div>
         </section>

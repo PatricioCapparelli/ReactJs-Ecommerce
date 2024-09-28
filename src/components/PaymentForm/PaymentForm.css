@@ -1,0 +1,49 @@
+.payment-card {
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: rgba(255, 255, 255, 1);
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccccccaa;
+    background-color: #ccccccaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.payment-input::placeholder{
+    color: rgb(14, 14, 14);
+}
+
+.payment-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.payment-form_one{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.payment-form_two{
+    display: flex;
+    gap: 9px;
+}

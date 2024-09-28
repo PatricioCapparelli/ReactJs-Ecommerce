@@ -6,6 +6,7 @@
 @import './containers/ItemListContainer/ItemListContainer.css';
 @import './containers/HomeContainer/HomeContainer.css';
 @import './containers/Footer/Footer.css';
+@import './containers/CartContainer/CartContainer.css';
 
 /*  Pages Styles */
 
@@ -13,7 +14,7 @@
 
 /*  Global Components Styles  */
 
-@import './components/CartWidget/Cart.css';
+@import './components/CartWidget/CartWidget.css';
 @import './components/Title/Title.css';
 @import './components/Pill/Pill.css';
 @import './components/Button/Button.css';
@@ -27,4 +28,7 @@
 @import './components/ArticleComponent/ArticleComponent.css';
 @import './components/Spinner/Spinner.css';
 @import './components/Accordion/Accordion.css';
+@import './components/CartItem/CartItem.css';
+@import 'react-credit-cards-2/dist/es/styles-compiled.css';
+@import './components/PaymentForm/PaymentForm.css'
 

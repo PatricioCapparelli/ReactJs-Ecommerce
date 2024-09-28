@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import helado from '../../assets/helado.png';
 import Title from '../../components/Title/Title';
-import CartWidget from '../../components/CartWidget/Cart';
+import CartWidget from '../../components/CartWidget/CartWidget';
 import ItemList from '../../components/ItemList/ItemList';
 import Accordion from '../../components/Accordion/Accordion';
 

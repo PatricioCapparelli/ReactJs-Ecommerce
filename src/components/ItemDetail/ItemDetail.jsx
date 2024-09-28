@@ -2,19 +2,21 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
 import ItemButton from '../ItemButton/ItemButton'; 
 import RemoveAddButton from '../RemoveAddButton/RemoveAddButton'; 
-
+import { useNavigate } from 'react-router-dom';
 
 const ItemDetail = ({ id, name, img, stock, price, className }) => {
-    const {addItem, removeItem} = useContext(CartContext);
+    const { addItem, removeItem } = useContext(CartContext);
+    const navigate = useNavigate();
 
     const handleAdd = () => {
-        addItem({id, name, img, stock, price, className })
-    }
+        addItem({ id, name, img, stock, price, className }, 1);
+        navigate('/cart');
+    };
 
     const handleRemove = () => {
-        removeItem(id)
-    }
-    
+        removeItem(id);
+    };
+
     return (
         <article className={className} id={id}>
             <picture>
@@ -40,12 +42,15 @@ const ItemDetail = ({ id, name, img, stock, price, className }) => {
                     <p className="card-item__detail-precio">
                         Precio: ${price}
                     </p>
-                    <RemoveAddButton name='+1' lastname='-1' eventHandler={handleRemove}> <p> Or </p>  </RemoveAddButton>
+                    <RemoveAddButton name='+1' lastname='-1' eventHandler={handleRemove} onAdd={handleAdd}>
+                        <p> Or </p>  
+                    </RemoveAddButton>
                 </footer>
-                <ItemButton eventHandler={handleAdd} className='item-button__foot' name='Agregar al carrito'></ItemButton>
+                <ItemButton className='item-button__foot' name='Agregar al carrito' eventHandler={handleAdd} />
             </div>
         </article>
     );
-}
+};
 
 export default ItemDetail;
+
