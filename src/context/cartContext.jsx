@@ -36,6 +36,12 @@ const CartContextProvider = ({ children }) => {
         setCartItems(updatedCartItems);
     };
 
+    const removeAllOfItem = (id) => {
+        const updatedCartItems = cartItems.filter(currentItem => currentItem.item.id !== id);
+        setCartItems(updatedCartItems);
+    };
+    
+
     const clearCart = () => {
         setCartItems([]);
     };
@@ -77,7 +83,7 @@ const CartContextProvider = ({ children }) => {
     };
 
     return (
-        <CartContext.Provider value={{ cartItems, addItem, removeItem, clearCart, getCartQuantity, getCartTotal, incrementItemQuantity }}>
+        <CartContext.Provider value={{ cartItems, addItem, removeItem, clearCart, getCartQuantity, getCartTotal, incrementItemQuantity, removeAllOfItem }}>
             {children}
         </CartContext.Provider>
     );

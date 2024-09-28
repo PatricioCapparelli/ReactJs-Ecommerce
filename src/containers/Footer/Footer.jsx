@@ -9,10 +9,11 @@ const Footer = () => {
     const links = [
         { name: 'Home', href: '/' },
         { name: 'Shop', href: '/Shop' },
-        { name: 'Detail', href: '/Detail' },
-        { name: 'Sabores', href: '#'},
-        { name: 'Postres', href: '#'},
-        { name: 'Paletas', href: '#'},
+        { name: 'Detail', href: '#' },
+        { name: 'Carrito', href: '/cart' },
+        { name: 'Sabores', href: '#' },
+        { name: 'Postres', href: '#' },
+        { name: 'Paletas', href: '#' },
     ];
 
 

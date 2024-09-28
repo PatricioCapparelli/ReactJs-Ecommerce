@@ -1,3 +1,7 @@
+.payment-container {
+    position: relative;
+}
+
 .payment-card {
     display: flex;
     width: 800px;
@@ -9,9 +13,18 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: rgba(255, 255, 255, 1);
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.7s ease-out, opacity 0.7s ease-out;
+    overflow: hidden;
+}
+
+.payment-card.show {
+    max-height: 500px;
+    opacity: 1;
 }
 
 .payment-form {
@@ -28,7 +41,7 @@
     font-size: 16px;
 }
 
-.payment-input::placeholder{
+.payment-input::placeholder {
     color: rgb(14, 14, 14);
 }
 
@@ -37,13 +50,42 @@
     outline: none;
 }
 
-.payment-form_one{
+.payment-form_one {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.payment-form_two{
+.payment-form_two {
     display: flex;
     gap: 9px;
+}
+
+.finally-button-two {
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 16px;
+    cursor: pointer;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(4, 255, 0, 0.668);
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.finally-button-two:hover {
+    background-color: rgba(4, 255, 0, 0.444);
+}
+
+.payment-input_two-first {
+    width: 80px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccccccaa;
+    background-color: #ccccccaa;
+    border-radius: 5px;
+    font-size: 16px;
 }

@@ -10,7 +10,7 @@ const Detail = () => {
 
     const stock = item?.stock ?? '0'; 
 
-    const className = stock === '24' ? 'card-white__item' : 'card-item';
+    const className = stock === '24' ? 'card-white__item' : 'card-item__detail';
 
     return (
         <section className='section-content'>

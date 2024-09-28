@@ -30,6 +30,8 @@
     background-color: red;
     color: white;
     transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    font-size: medium;
 }
 
 .finally-button:hover{

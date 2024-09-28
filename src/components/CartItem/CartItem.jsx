@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { CartContext } from "../../context/cartContext";
 
 const CartItem = ({ id, name, img, stock, price, className, quantity }) => {
-    const { removeItem, incrementItemQuantity } = useContext(CartContext);
+    const { removeItem, incrementItemQuantity, removeAllOfItem } = useContext(CartContext);
 
     const itemClass = stock === '24' ? 'cart-white__item' : 'cart-item';
 
@@ -29,7 +29,7 @@ const CartItem = ({ id, name, img, stock, price, className, quantity }) => {
                     </div>
                 </footer>
                 <p>Total: ${quantity * price}</p>
-                <button className='item-finally' onClick={() => removeItem(id)}>Eliminar</button>
+                <button className='item-finally' onClick={() => removeAllOfItem(id)}>X</button>
             </div>
         </article>
     );

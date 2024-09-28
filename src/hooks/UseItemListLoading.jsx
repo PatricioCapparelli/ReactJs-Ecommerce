@@ -23,7 +23,7 @@ const useItemListLoading = () => {
         }, []);
 
 
-    return { products, loading }
+    return { products, loading, setLoading }
 }
 
 export default useItemListLoading;
