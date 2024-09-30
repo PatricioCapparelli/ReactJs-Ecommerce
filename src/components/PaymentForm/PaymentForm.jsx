@@ -21,7 +21,7 @@ const PaymentForm = ({ isVisible, onPaymentSuccess, className }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onPaymentSuccess();
+        onPaymentSuccess(state); // Envia los datos del pago a firestore
     };
 
     return (
