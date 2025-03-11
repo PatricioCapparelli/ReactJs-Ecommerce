@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import helado from '../../assets/helado.png';
+import helado from '/assets/helado.png';
 import Title from '../../components/Title/Title';
 import ItemList from '../../components/ItemList/ItemList';
 import IconPresent from '../../components/IconPresent/IconPresent';

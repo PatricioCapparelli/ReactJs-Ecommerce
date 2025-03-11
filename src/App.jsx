@@ -25,7 +25,6 @@ function App() {
         </BaseLayout>
       </BrowserRouter>
     </CartContextProvider>
-
   )
 }
 

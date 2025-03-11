@@ -11,7 +11,7 @@ const CartItem = ({ id, name, img, stock, price, className, quantity }) => {
             <div className="cart-item__main">
                 <header className="cart-item__detail-header">
                     <picture>
-                        <img className="card-item__detail-img" src={`../${img}`} alt={name} />
+                        <img className="card-item__detail-img" src={`${img}`} alt={name} />
                     </picture>
                     <div>
                         <h2 className="item-detail-header">{name}</h2>

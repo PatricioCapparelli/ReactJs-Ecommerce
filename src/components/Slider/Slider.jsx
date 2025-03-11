@@ -1,10 +1,10 @@
 import useSlider from '../../hooks/UseSlider'
+import FondoChoco from '/assets/Fondo-choco.jpg';
+import FondoFrutilla from '/assets/fondo-frutilla.jpg';
+import FondoLimon from '/assets/Fondo-limon.jpg';
 
-const images = [
-    '../../src/assets/Fondo-choco.jpg',
-    '../../src/assets/fondo-frutilla.jpg',
-    '../../src/assets/fondo-limon.jpg'
-];
+const images = [FondoChoco, FondoFrutilla, FondoLimon];
+
 
 const Slider = () => {
     const currentIndex = useSlider(images.length);

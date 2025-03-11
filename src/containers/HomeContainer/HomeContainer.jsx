@@ -1,13 +1,13 @@
 import Slider from "../../components/Slider/Slider";
 import Title from "../../components/Title/Title"
-import sambaImage from '../../assets/cono-sambayon.png';
-import oreoImage from   '../../assets/helado-oreo-home.png'
+import sambaImage from '/assets/cono-sambayon.png';
+import oreoImage from   '/assets/helado-oreo-home.png'
 import IconPresent from "../../components/IconPresent/IconPresent";
-import mentaImage from   '../../assets/cono-menta.png'
-import arandanoImage from   '../../assets/cono-arandano.png'
-import merengueImage from   '../../assets/cono-limon-merengue-min.png'
-import bombonImage from '../../assets/bombon-escoces.png'
-import paletaImage from '../../assets/paleta-home.png'
+import mentaImage from   '/assets/cono-menta.png'
+import arandanoImage from   '/assets/cono-arandano.png'
+import merengueImage from   '/assets/cono-limon-merengue-min.png'
+import bombonImage from '/assets/bombon-escoces.png'
+import paletaImage from '/assets/paleta-home.png'
 import ArticleComponent from "../../components/ArticleComponent/ArticleComponent";
 
 
