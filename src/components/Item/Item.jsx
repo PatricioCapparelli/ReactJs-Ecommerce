@@ -1,5 +1,4 @@
 import ItemButton from '../ItemButton/ItemButton'
-import RemoveAddButton from '../RemoveAddButton/RemoveAddButton';
 import { Link } from 'react-router-dom'; 
 
 const Item = ({ name, img, stock, price, className, id }) => {

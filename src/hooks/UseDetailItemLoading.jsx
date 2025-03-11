@@ -6,16 +6,17 @@ import { database } from "../config/firebase.config";
 const useDetailItemLoading = () => {
     const [item, setItem] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
     const { id } = useParams();
 
     useEffect(() => {
-        const fetchItem = async () => {
-            if (!id) {
-                console.error("El ID es indefinido");
-                setLoading(false);
-                return;
-            }
+        if (!id) {
+            setError("El ID del producto no está disponible.");
+            setLoading(false);
+            return;
+        }
 
+        const fetchItem = async () => {
             setLoading(true);
             const docRef = doc(database, 'items', id);
             console.log("ID del documento:", id);
@@ -28,10 +29,12 @@ const useDetailItemLoading = () => {
                     console.log('Datos del documento:', snapshot.data());
                 } else {
                     setItem(null);
+                    setError("El producto no existe.");
                 }
             } catch (error) {
                 console.error('Error al encontrar el item', error);
                 setItem(null);
+                setError("Error al obtener el producto. Intenta nuevamente.");
             } finally {
                 setLoading(false);
             }
@@ -40,7 +43,7 @@ const useDetailItemLoading = () => {
         fetchItem();
     }, [id]);
 
-    return { item, loading };
+    return { item, loading, error };
 };
 
 export default useDetailItemLoading;
